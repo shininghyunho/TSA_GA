@@ -240,7 +240,7 @@ if __name__ == '__main__':
         if "DIMENSION" in line:
             line = line.split()
             n_cities = int(line[1])
-        elif "NODE_COORD_SECTION" in line | "DISPLAY_DATA_SECTION" in line:
+        elif ("NODE_COORD_SECTION" in line) | ("DISPLAY_DATA_SECTION" in line):
             isNode = True
         elif "EOF" in line:
             break
